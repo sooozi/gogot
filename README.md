@@ -52,3 +52,26 @@
 AI를 개발 보조 도구로 활용하되,
 요구사항 정의와 생성 코드 검토,
 테스트 결과 확인은 직접 수행합니다.
+
+## 로컬 개발 시작
+
+Node.js 24 LTS와 npm을 사용합니다. Windows PowerShell에서는 `npm.cmd`로 실행할 수 있습니다.
+
+```sh
+npm ci
+npm run dev
+```
+
+브라우저에서 http://localhost:3000 에 접속합니다. 현재는 모바일 홈과 공유 링크의
+형식 판별만 제공합니다. 외부 접속·장소 분석·저장·로그인·지도는 아직 연결하지 않았습니다.
+실제 API 키 없이 실행할 수 있습니다.
+
+```sh
+npm run lint
+npm run typecheck
+npm test
+npm run build
+```
+
+- [웹 MVP 아키텍처와 단계별 계획](docs/architecture.md)
+- [초기 환경 구축 개발 일지](docs/devlogs/2026-10-26-project-setup.md)
